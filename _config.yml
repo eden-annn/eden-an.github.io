@@ -4,7 +4,7 @@ email:       eden.annn@gmail.com
 author:      Eden An
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 baseurl:     ""
-url:         "https://eden.github.io"
+url:         "https://eden-an.github.io"
 date_format: "%b %-d, %Y"
 
 # Google services
@@ -71,8 +71,8 @@ share_hackernews: false
 
 text:
   pagination:
-    newer: 'Newer'
-    older: 'Older'
+    newer: '이전'
+    older: '다음'
   share_buttons:
     text:         'Share this post!'
     facebook:     'Share on Facebook'
