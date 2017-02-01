@@ -4,7 +4,7 @@ email:       eden.annn@gmail.com
 author:      Eden An
 description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
 baseurl:     ""
-url:         ""
+url:         "https://eden.github.io"
 date_format: "%b %-d, %Y"
 
 # Google services
