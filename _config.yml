@@ -1,9 +1,9 @@
 # Site settings
-title:       Eden
+title:       eden
 email:       eden.annn@gmail.com
 author:      Eden An
-description: "A simple, beautiful theme for Jekyll that emphasizes content rather than aesthetic fluff."
-baseurl:     ""
+description: "description."
+baseurl:     "https://eden-annn.github.io"
 url:         "https://eden-annn.github.io"
 date_format: "%b %-d, %Y"
 
