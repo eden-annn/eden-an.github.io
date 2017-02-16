@@ -71,8 +71,8 @@ share_hackernews: false
 
 text:
   pagination:
-    newer: '이전'
-    older: '다음'
+    newer: 'new posts'
+    older: 'old posts'
   share_buttons:
     text:         'Share this post!'
     facebook:     'Share on Facebook'
