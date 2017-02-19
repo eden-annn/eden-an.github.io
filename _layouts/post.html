@@ -22,9 +22,11 @@ layout: default
   {% endif %}
   <!-- categories -->
   {% assign category = site.my_categories | where: "slug", post.category %}
+   a: {{ category }}
   {% assign category = category[0] %}
+   b: {{ category }}
   {% if category %}
-      ff{% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
+      {% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
   {% endif %}
   <!-- tag -->
   {% if post.tags.size > 0 %}
@@ -36,7 +38,7 @@ layout: default
             {% endif %}
         {% endfor %}
         {% if tag %}
-            ffdd{% capture tags_content_temp %}{{ tags_content }}<a href="/blog/tag/{{ tag.slug }}/">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
+            {% capture tags_content_temp %}{{ tags_content }}<a href="/blog/tag/{{ tag.slug }}/">{{ tag.name }}</a>{% if forloop.last == false %}, {% endif %}{% endcapture %}
             {% assign tags_content = tags_content_temp %}
         {% endif %}
     {% endfor %}
