@@ -3,7 +3,7 @@ layout:     post
 title:      ProRes for RV Player
 date:       2017-02-15 01:22:23
 summary:    RV플레이어에서 ProRes 영상을 플레이 하는 방법 
-categories: Test
+category: general
 tags: [github]
 ---
 
