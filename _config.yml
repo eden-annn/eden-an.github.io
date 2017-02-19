@@ -126,8 +126,8 @@ gems:
 exclude: [vendor]
 
 # Outputting
-permalink: /post/:title/
-paginate: 5
-paginate_path: '/blog/page/:num/'
+#permalink: /post/:title/
+#paginate: 5
+#paginate_path: '/blog/page/:num/'
 
 
