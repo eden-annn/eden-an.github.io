@@ -21,7 +21,7 @@ layout: default
     {{ minutes }} {{ site.text.post.minute_read }}
   {% endif %}
   <!-- categories -->
-   {{ site.tags }}aaaa
+   {{ site.categories }}aaaa
   {% assign category = site.my_categories | where: "slug", post.category %}
   {% assign category = category[0] %}
   {% if category %}
