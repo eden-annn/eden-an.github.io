@@ -1,3 +1,12 @@
+# Where things are
+collections:
+  my_categories:
+    output: true
+    permalink: /blog/category/:name/
+  my_tags:
+    output: true
+    permalink: /blog/tag/:name/
+
 # Site settings
 title:       eden
 email:       eden.annn@gmail.com
