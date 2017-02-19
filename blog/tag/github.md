@@ -1,5 +1,5 @@
 ---
-layout: blog_by_tag
+layout: blog_by_tag2
 tag: github
-permalink: /blog/tag/github/
+permalink: /tag/github/
 ---
