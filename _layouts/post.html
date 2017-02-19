@@ -22,7 +22,7 @@ layout: default
   {% endif %}
   <!-- categories -->
   {% assign category = site.my_categories | where: "slug", post.category %}
-   a: {{ post.category }}
+   a: {{ site.my_categories }}
   {% assign category = category[0] %}
    b: {{ category_content }}
   {% if category %}
