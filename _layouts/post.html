@@ -9,7 +9,7 @@ layout: default
 {% endif %}
 
 <div class="post-header mb2">
-  <h1>{{ page.title }}</h1>
+  <h1>{{ page.title }}dd{{post.category}}|| {{ category_content }}</h1>
   <span class="post-meta">{{ page.date | date: site.date_format }}</span><br>
   {% if page.update_date %}
     <span class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span><br>
@@ -20,15 +20,13 @@ layout: default
   {% else %}
     {{ minutes }} {{ site.text.post.minute_read }}
   {% endif %}
-  </span>
-  <span>
+  <!-- categories -->
   {% assign category = site.my_categories | where: "slug", post.category %}
   {% assign category = category[0] %}
   {% if category %}
       {% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
   {% endif %}
-  </span>
-  <span>
+  <!-- tag -->
   {% if post.tags.size > 0 %}
     {% capture tags_content %}Posted with {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
     {% for post_tag in post.tags %}
