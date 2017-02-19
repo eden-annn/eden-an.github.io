@@ -7,8 +7,6 @@ collections:
     output: true
     permalink: /tag/:name/
 
-my_categories: ['general', 'programming']
-my_tags: ['github', 'jekyll']
 # Site settings
 title:       eden
 email:       eden.annn@gmail.com
