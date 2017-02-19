@@ -22,9 +22,9 @@ layout: default
   {% endif %}
   <!-- categories -->
   {% assign category = site.my_categories | where: "slug", post.category %}
-   a: {{ category }}
+   a: {{ post.category }}
   {% assign category = category[0] %}
-   b: {{ category }}
+   b: {{ category_content }}
   {% if category %}
       {% capture category_content %}<a class="label" href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
   {% endif %}
