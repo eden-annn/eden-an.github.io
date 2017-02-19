@@ -21,12 +21,7 @@ layout: default
     {{ minutes }} {{ site.text.post.minute_read }}
   {% endif %}
   <!-- categories -->
-   {{ site.categories }}aa
-  {% assign category = site.categories | where: "slug", post.category %}
-  {% assign category = category[0] %}
-  {% if category %}
-    {% capture category_content %}<a class="label" href="{{ category.url }}" style="background-color:{{ category.color }}">{{ category.name }}</a>{% endcapture %}
-  {% endif %}
+    {% capture site.categories %}<a class="label" href="{{ category.url }}" style="background-color:{{ category.color }}">{{ category.name }}</a>{% endcapture %}
   <!-- tag -->
   {% if post.tags.size > 0 %}
     {% capture tags_content %}Posted with {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
