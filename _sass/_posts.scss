@@ -20,11 +20,11 @@
   font-weight: 500;
 }
 
-.post-link .post-title a {
+a.post-link .post-title {
   color: #333;
 }
 
-.post-link .post-title a:hover,a:focus,a:active {
+a.post-link:hover .post-title {
   color: $orange;
 }
 
