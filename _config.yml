@@ -2,10 +2,10 @@
 collections:
   my_categories:
     output: true
-    permalink: /blog/category/:name/
+    permalink: /category/:name/
   my_tags:
     output: true
-    permalink: /blog/tag/:name/
+    permalink: /tag/:name/
 
 # Site settings
 title:       eden
