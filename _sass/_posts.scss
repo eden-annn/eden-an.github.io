@@ -18,11 +18,14 @@
 .post-link .post-title {
   margin-top: 0;
   font-weight: 500;
+}
+
+.post-link .post-title a {
   color: #333;
 }
 
-.post-link .post-title a:hover {
-  color: $orange !important;
+.post-link .post-title a:hover,a:focus,a:active {
+  color: $orange;
 }
 
 .post-footer {
@@ -49,7 +52,7 @@
 
 .post-meta a {
  color: $orange;
- text-decoration: none !important;
+ background: none;
 }
 
 .related-post-title {
