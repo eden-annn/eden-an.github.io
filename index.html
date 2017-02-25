@@ -16,9 +16,15 @@ layout: default
               {{ post.excerpt }}
             {% endif %}
           </p>
+          <!-- categories -->
+          {% assign category = site.my_categories | where: "slug", post.category %}
+          {% assign category = category[0] %}
+          {% if category %}
+            {% capture category_content %}<a class="label" href="{{ category.url }}" style="color:{{ category.color }}">{{ category.name }}</a>{% endcapture %}
+          {% endif %}
           <!-- tag -->
           {% if post.tags.size > 0 %}
-            {% capture tags_content %}Tag {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
+            {% capture tags_content %} | {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}{% endcapture %}
             {% for post_tag in post.tags %}
                 {% for data_tag in site.data.tags %}
                     {% if data_tag.slug == post_tag %}
@@ -34,7 +40,7 @@ layout: default
               {% assign tags_content = '' %}
           {% endif %}
           <p class="post-meta">
-              {{ post.category }} -
+              {{ category_content }} -
               {{ post.date | date: site.date_format }}
               {{ tags_content }}
         </p>
