@@ -12,23 +12,25 @@ layout: default
   <h2>{{ page.title }}</h2>
   <span class="post-meta">{{ page.date | date: site.date_format }}</span><br>
   {% if page.update_date %}
-    <span class="post-meta">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span><br>
+    <span class="post-meta small">{{ site.text.post.updated }}: {{ page.update_date | date: site.date_format }}</span><br>
   {% endif %}
   <span class="post-meta small">
+  <!--
   {% if page.minutes %}
     {{ page.minutes }} {{ site.text.post.minute_read }}
   {% else %}
     {{ minutes }} {{ site.text.post.minute_read }}
   {% endif %}
+  -->
   <!-- categories -->
   {% assign category = site.my_categories | where: "slug", post.category %}
   {% assign category = category[0] %}
   {% if category %}
-    {% capture category_content %}<a href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
+    {% capture category_content %}Category <a href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
   {% endif %}
   <!-- tag -->
   {% if post.tags.size > 0 %}
-    {% capture tags_content %}Posted with {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}: {% endcapture %}
+    {% capture tags_content %}Tag {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}{% endcapture %}
     {% for post_tag in post.tags %}
         {% for data_tag in site.data.tags %}
             {% if data_tag.slug == post_tag %}
