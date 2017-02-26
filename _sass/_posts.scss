@@ -9,6 +9,20 @@
   border-bottom: thin solid #f3f3f3;
 }
 
+.post-header {
+  border-bottom: 1px solid #e5e5e5;
+  padding: 10px 0 50px;
+  text-align: center;
+}
+
+.post-header h2 {
+  margin-bottom: 40px;
+}
+
+.post-content {
+  padding-top: 40px;
+}
+
 .posts .post:last-child {
   border-bottom: none;
   margin-bottom: .375em;
