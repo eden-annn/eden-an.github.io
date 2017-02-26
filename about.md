@@ -1,6 +1,6 @@
 ---
 layout: page
-title: About Pixyll
+title: I'm Eden
 permalink: /about/
 tags: about
 ---
