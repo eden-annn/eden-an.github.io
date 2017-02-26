@@ -13,8 +13,6 @@ Tweak software의 __Rv Player__(이하 RV)에서는 기본적으로 -저작권 �
 ![screenshot-rv](https://cloud.githubusercontent.com/assets/25483610/23003530/af051ade-f434-11e6-8526-57250014fd2b.png)
 
 
-
-
 ### 솔루션
 
 이 문제를 해결하기 위해서는 RV에서 미리 준비해둔 FFMPEG 관련 파일을 약간만 수정해주고 컴파일을 해야 한다.
@@ -38,7 +36,6 @@ static const char* disallowedCodecsArray[] = {
     0 };
 ```
 
-
 시작이 반이라고 벌써 마지막 단계이다. 같은 폴더에서 sudo 권한으로 컴파일을 실행한다.
 ```shell
 sudo make
@@ -57,4 +54,4 @@ sudo make install
 
 RV를 재실행 후 ProRes 영상을 플레이해보면 아래와 같이 정상적으로 플레이 되는 것을 확인할 수 있다.
 
-<center>![screenshot-1](https://cloud.githubusercontent.com/assets/25483610/23003508/8f383e5c-f434-11e6-99e9-8027f6ef37e1.png)</center>
+![screenshot-1](https://cloud.githubusercontent.com/assets/25483610/23003508/8f383e5c-f434-11e6-99e9-8027f6ef37e1.png)
