@@ -1,6 +1,7 @@
 
 .posts {
   margin: 0;
+  padding: 0 20px;
   border-bottom: 1px solid #eaeaea;
 }
 
@@ -21,7 +22,7 @@
 }
 
 .post-content {
-  padding-top: 40px;
+  padding: 40px 20px 0;
 }
 
 .posts .post:last-child {
