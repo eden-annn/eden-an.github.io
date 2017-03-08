@@ -20,7 +20,7 @@ Tweak software의 __Rv Player__(이하 RV)에서는 기본적으로 -저작권 �
 
 먼저, RV가 설치된 디렉토리 하위에 있는 파일 하나를 열어서 prores 관련 부분을 삭제하거나 주석처리 해주고 저장한다.
 
-`{RV home}/src/mio_ffmpeg/init.cpp`:
+{RV home}/src/mio_ffmpeg/init.cpp:
 ```c++
 static const char* disallowedCodecsArray[] = {
     "mp3",
