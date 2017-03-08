@@ -54,6 +54,7 @@ RV를 재실행 후 ProRes 영상을 플레이해보면 아래와 같이 정상�
 
 
 ## Options
+---
 `-i ICON`: specifies an icon to display. The possible values of ICON are: `info` | `important` | `error`. Default: `info`.
 
 `-a APPNAME`: specifies the application name for the icon.
@@ -72,3 +73,4 @@ This parameter is deprecated as of Windows Vista. Notification display times are
 
 `--`: end of options.
 
+---
