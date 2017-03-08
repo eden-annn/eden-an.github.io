@@ -48,5 +48,6 @@ sudo make install
 
 ## 확인
 
-RV를 재실행 후 ProRes 영상을 플레이해보면 아래와 같이 정상적으로 플레이 되는 것을 확인할 수 있다.
 <center><img src="https://cloud.githubusercontent.com/assets/25483610/23003508/8f383e5c-f434-11e6-99e9-8027f6ef37e1.png"></center>
+
+RV를 재실행 후 ProRes 영상을 플레이해보면 아래와 같이 정상적으로 플레이 되는 것을 확인할 수 있다.
