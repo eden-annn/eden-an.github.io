@@ -13,7 +13,7 @@ Tweak software의 __Rv Player__(이하 RV)에서는 기본적으로 -저작권 �
 ![screenshot-rv](https://cloud.githubusercontent.com/assets/25483610/23003530/af051ade-f434-11e6-8526-57250014fd2b.png)
 
 
-## 솔루션
+# Solution
 
 이 문제를 해결하기 위해서는 RV에서 미리 준비해둔 FFMPEG 관련 파일을 약간만 수정해주고 컴파일을 해야 한다.
 아래는 Linux CentOS6을 기준으로 하는 내용이지만 macOS나 Windows에서도 마찬가지로 코드 수정과 컴파일에 각각 Xcode, Visual Studio를 사용하는 것을 제외하고는 과정은 동일하다.
@@ -51,3 +51,15 @@ sudo make install
 RV를 재실행 후 ProRes 영상을 플레이해보면 아래와 같이 정상적으로 플레이 되는 것을 확인할 수 있다.
 
 ![screenshot-1](https://cloud.githubusercontent.com/assets/25483610/23003508/8f383e5c-f434-11e6-99e9-8027f6ef37e1.png)
+
+
+# Options
+`-i ICON`: specifies an icon to display. The possible values of ICON are: `info` | `important` | `error`. Default: `info`.
+`-a APPNAME`: specifies the application name for the icon.
+`-t TIMEOUT`: specifies the timeout in milliseconds at which to expire the notification. Default: 5000.
+This parameter is deprecated as of Windows Vista. Notification display times are now based on system accessibility settings.
+`-v`: show version and exit.
+`-?`: show help options and exit.
+`--debug`: enables the debug mode.
+`-u LEVEL`, `-c TYPE`, `-h HINT` are ignored (designed for compatibility with the Linux version).
+`--`: end of options.
