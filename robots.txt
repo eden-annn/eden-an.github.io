@@ -1,1 +1,4 @@
+User-agent: *
+Allow:/
+
 Sitemap: https://eden-annn.github.io/https://eden-annn.github.io/sitemap.xml
