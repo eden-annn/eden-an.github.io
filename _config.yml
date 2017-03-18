@@ -12,7 +12,7 @@ title:       eden blog
 email:       eden.annn@gmail.com
 author:      Eden An
 description: "VFX compositing technical blog"
-baseurl:     "/"
+baseurl:     "https://eden-annn.github.io"
 url:         "https://eden-annn.github.io"
 date_format: "%b %-d, %Y"
 
