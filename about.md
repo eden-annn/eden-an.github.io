@@ -11,7 +11,7 @@ Visual effects compositing TD
 
 ## Work Experience
 Compositing Technical Director - 4th Creative Party<br />
-<span style="color:#CCC">02/2014 - Present - Busan, Korea</span>
+<span style="color:#999">02/2014 - Present - Busan, Korea</span>
 
 Web Front/End Developer - SteelSeries Korea Branch<br />
 08/2011 - 09/2012 - Seoul, Korea
