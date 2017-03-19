@@ -6,7 +6,7 @@ tags: about
 ---
 
 ## About me
-Visual effects compositing TD
+Visual effects compositing TD at 4th Creative Party
 
 
 ## Work Experience
