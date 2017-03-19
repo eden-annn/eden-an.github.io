@@ -10,6 +10,5 @@ Visual effects compositing TD
 
 
 ## Work Experience
-Compositing Technical Director - 4th Creative Party
-
+Compositing Technical Director - 4th Creative Party<br />
 02/2014 - Present - Busan, Korea
