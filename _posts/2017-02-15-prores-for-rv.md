@@ -3,8 +3,8 @@ layout:     post
 title:      ProRes for RV Player
 date:       2017-02-15 01:22:23
 summary:    RV플레이어에서 ProRes 영상을 플레이 하는 방법 
-category: general
-tags: [github]
+category: til
+tags: [rv]
 ---
 
 Tweak software의 __Rv Player__(이하 RV)에서는 기본적으로 -저작권 때문인지- Apple의 ProRes 코덱으로 인코딩된 영상의 플레이가 불가능하다. 아니, 불가능하다기보다는 활성화시켜놓지 않았다는 게 맞는 말 이겠다.
