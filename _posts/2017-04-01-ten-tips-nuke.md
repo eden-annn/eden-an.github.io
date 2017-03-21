@@ -2,7 +2,7 @@
 layout:     post
 title:      Nuke를 최적화하고 효율적인 작업공정을 위한 10가지 팁
 date:       2017-04-01 06:12:42
-summary:    지나치기 쉽지만 알아두면 퇴근을 앞당기는 10가지 Nuke 최적화 팁
+summary:    지나치기 쉽지만 알아두면 퇴근을 앞당기는 Nuke 최적화 팁
 category: study
 tags: [nuke,compositing]
 ---
