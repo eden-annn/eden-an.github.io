@@ -13,7 +13,7 @@ tags: [nuke,compositing]
 
 [원본](http://www.nukepedia.com/written-tutorials/10-tips-to-optimising-nuke-and-creating-efficient-workflows)
 
-공부할 겸 처음해보는 번역 작업이라서 오역이 많을 수 있습니다. 잘못된 내용은 지적해주시면 감사드리겠습니다.
+공부할 겸 처음해보는 번역 작업이라서 오역이 많을 수 있습니다. 잘못된 내용은 지적해주시면 수정하겠습니다.
 
 ### 1. B PIPE
 
