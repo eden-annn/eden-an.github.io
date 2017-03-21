@@ -13,11 +13,11 @@ tags: [nuke,compositing]
 
 [원본 글](http://www.nukepedia.com/written-tutorials/10-tips-to-optimising-nuke-and-creating-efficient-workflows)
 
-## 1. B PIPE
+### 1. B PIPE
 
 모든 Merge단계의 메인을 B input에 연결하세요 - 이는 노드 중간에 있는 Merge를 disable하더라도 이미지가 끊기지 않고 그대로 유지되는 장점도 있습니다. Shake의 Mask 'inside'와 'outside'처럼 Merge노드의 'mask'와 'stencil' 옵션에도 익숙해져야 합니다.
 
-## 2. BBOX
+### 2. BBOX
 
 작업하는 모든 요소의 bbox(bounding box)를 최적화해야 합니다. 만약 풀프레임 이미지라면 bbox가 (blur나 transform 등으로 인해) 전체 포맷보다 커지지 않게 주의해야하고, 풀프레임보다 작다면 bbox가 타이트하게 이미지 영역을 감싸고 있어야 합니다.
 
@@ -27,43 +27,43 @@ Merge 노드를 사용할 때 최소한의 bbox 영역을 고려하여 적절한
 
 precomp 같은 exr 시퀀스를 렌더할 때, Write 노드에서 'autocrop' 옵션을 체크할 수 있습니다. 해당 옵션은 exr 렌더에만 나타납니다. 이는 꽤 많은 메모리를 사용하므로 렌더속도가 느릴 수 있지만, 최초 한번만 하면 되고 시퀀스를 불러왔을 때 bbox가 포함되어 있을 것입니다.
 
-3. Transform 노드의 연속성
+### 3. Transform 노드의 연속성
 
 Transform 노드는 연속으로 연결해서 플레이트나 각각의 요소들의 무결성(역주: 이하 퀄리티)을 유지시켜야합니다. 왜냐면, 근본적으로 픽셀에 필터링(transform, convolves, blur 등), 즉 변화를 줄때마다 시각적 cheat인 필터 알고리즘으로 인해 근사치의 새로운 픽셀이 나타납니다. 이는 이미지 퀄리티를 저하시키고 - 일반적으로 그 정도는 미세하지만 - 이러한 문제가 쌓이다보면 플레이트나 각각의 요소에 원치 않은 이미지 결함이 나타나기 시작합니다. 역속된 다수의 Transform 노드들은 수학적으로 한 번의 연산만을 합니다. 이는 Transform 작업을 여러개의 노드를 통해 효율적으로 작업할 수 있어서 유용하며 Nuke의 3d 환경은 2d transform 노드와도 연결됩니다. 한 요소를 움직이는데, 각각의 X/Y, scale, rotate의 독립적으로 제어할 수 있습니다. 이렇게 연산을 하는 3개의 노드로 분리함으로써 transform 작업을 조절하거나 제거 또는 빠르게 비활성화할 수 있습니다. 만약 Nuke가 3개의 Transform 노드를 이어서 처리하지 않았다면, 이미지는 각 단계마다 손실될 것 입니다.
 다행히도 Nuke는 문제없습니다. 단, 한가지 중요한 규칙만 따른다면 말이죠. Transform 노드 사이를 Color correct나 Merge 노드로 연결을 끊으면 안됩니다. Shake에서는 편리하게도 Transform 노드의 연속성을 시각적인 초록색 라인으로 표시해주는 피드백이 있었지만, Nuke는 그런 표시가 없습니다.(아직이요? 제발!)
 
-4. CARD3D
+### 4. CARD3D
 
 Scanline render의 3D 환경에서 Card 노드 대신 Card3D 노드를 사용하세요. 렌더링 속도가 훨씬 빠르고 Card 노드와 동일하게 작업 할 수 있습니다.
 
-5. DEFOCUS 대신 BLUR
+### 5. DEFOCUS 대신 BLUR
 
 Nuke의 Defocus 노드는 꽤 빠르지만, Blur 노드가 더 빠릅니다. 'Bokeh' 효과(블루밍된 하이라이트 같은)가 필요한 경우에만 defocus를 사용하세요. 매트(마스크) 채널이나 optical 효과가 필요 없는 부드러운 이미지에는 사용하지마세요.
 
-6. EXPOSURE = MULT
+### 6. EXPOSURE = MULT
 
 엄밀히 말하면 이 부분은 최적화라고 할 수는 없지만, exposure 노드는 옵션이 노출 단위로 표시되는 것을 제외하고는 Grade 노드의 multiply 옵션과 동일하다. 만약 당신이 카메라 stop이나 빛 노출 단위로 조절하거나, 슈퍼바이저나 감독에게 stop 단위로 업/다운 수정을 받았을 때는 유용하다. 이 노드는 어떤 특별한 기능을 하는게 아닙니다. 보통의 컬러 작업은 Grade 노드를 사용하는게 좋습니다.
 
-7. LOWER RES / LESS FRAMES PREVIEW
+### 7. LOWER RES / LESS FRAMES PREVIEW
 
 낮은 해상도 / 프레임 속도로 작업합니다. Shot 작업을 진행할 때 항상 모든 프레임을 Full resolution으로 볼 필요는 없습니다. 프록시 모드에서 작업을 할 수 있고, 작업중인 화면을 빠르게 프록시 모드로 렌더링할 수도 있습니다. 물론 파이널 렌더나, Full resolution이 필요할때도 있지만, 간단한 comp 에러나 solving 에러 확인을 할 때는 프록시 사이즈 렌더링이 더 효과적입니다. 프레임도 마찬가지입니다. 초기 컴프 작업 단계에서 모든 프레임 대신 5 프레임마다 렌더링할 수 있습니다. 렌더링 시간은 5배 빨라지고(예를 들어 50분에서 10분으로) 대부분의 에러를 발견할 수 있습니다. 보통은 각 프레임을 보며 작업하기 떄문에 이 방식을 항상 사용할 수는 없지만, 렌더 속도를 빠르게 해서 당신와 당신의 팀의 렌더 시간을 절약할 수 있습니다. Flipbook 뷰어는 다양한 프레임 레이트로 재생이 가능하기 때문에 5 프레임 단위로 렌더링 한 경우 원래 속도의 20%로 재생해야 할겁니다. 당연히 이상하게 보이겠지만 you will get the idea of timing. 만약 2 프레임 단위로 렌더링을 해서 2배가 빨라지더라도, 이 방식은 한번 생각해볼만한 가치가 있습니다.
 
-8. PRECOMP
+### 8. PRECOMP
 
 더이상 변경하지 않을 부분이나 작업이 종료된 부분은 precomp 하십시오. 멈춰있는 '스틸 프레임'이더라도 실제로는 각 프레임마다 생각보다 꽤 많은 연산을 합니다. 그렇기 때문에 단순히 멈춰있는 프레임이나 Nuke에서 많은 추가 작업을 진행한 매트페인트는 pre render하는 것이 가장 좋습니다. 최종 렌더 단계 전에도 precomp를 진행할 수 있습니다. write 노드의 'render orders' 옵션을 이용하면 노드 트리에 write 노드들을 먼저 렌더링 한 후 곧바로 위치한 Read노드에서 해당 시퀀스를 불러와 최종 렌더링 합니다. precomp 시퀀스를 아직 렌더링 하지 않은 경우, 수동으로 write 노드의 렌더 경로를 Read노드의 file path에 입력하고, Frame range 옵션을 설정해야 합니다. Nuke는 Read 노드의 Frame range 기본값을 1로 설정하기 때문입니다. Read 노드에서 파일을 찾을 수 없다는 에러가 나타날 것입니다. 그 다음, 노드 그래프의 최종 렌더링 write 노드의 order number를 가장 높은 숫자로 입력합니다. 만약 노드상에 precomp용 write노드가 2개라면 각각 1과 2의 order number 값을 부여하고 최종 메인 렌더용 write노드는 3을 입력합니다.
 현재 Nuke는 write 노드 내에 'read' 체크 박스를 가지고 있기 때문에 더 이상 precomp를 위해 read와 write 노드를 따로 만들지 않아도 됩니다. 단, 렌더링 전에 'read' 옵션을 체크하면 에러가 발생할겁니다.
 
 또 현재 누크에는 스크립트 파일에서 선택한 노드들을 새로운 스크립트로 저장하는 'precomp' 노드가 있고, write 노드도 여기에 포함되어 있습니다. 또한 precomp된 스크립트 버전 관리를 할 수 있고, 아웃풋을 메인 comp로 연결할 수 있습니다. precomp 스크립트에서 exr 시퀀스가 새로 렌더링 됐다면, Nuke는 해당 시퀀스가 예전버전임을 자동으로 감지합니다(누크는 이를 위해 exr 데이터에 내부에 있는 노드 hash 정보를 이용합니다). 자신만의 방법으로 precomp 노드를 사용할 수 있지만, 필자는 메인 스크립트에서 read/write로 사용하는 것을 선호합니다. 주로 협업 (예를 들어 라이팅 아티스트 또는 다른 컴포지터)을 위해 사용합니다. 보다 자세한 내용은 Nuke user manual을 참고하세요.
 
-9. RENDER LOCALLY
+### 9. RENDER LOCALLY
 
 백그라운드 로컬렌더. 대부분의 워크스테이션은 많은 RAM와 여러개의 프로세서가 있습니다. command line 명령을 통해 백그라운드 렌더링을 하고 다른 작업은 계속 이어나갈 수 있습니다. 특히 프레임이 길지 않거나, 팜이 막히거나 느려지는 경우 등에 사용할 수 있습니다.(역주: 현재는 Nuke write노드의 렌더 창에서 Background render 옵션을 통해 켤 수 있습니다.)
 
-10. VECTOR BLURS
+### 10. VECTOR BLURS
 
 멀티샘플 블러(Motionblur 3D나 Motionblur2D) 대신 vector blur 노드를 사용하십시오. 참고로 Transform 노드는 현재 자체 속성창에서 Motionblur2D 옵션을 사용할 수 있습니다.
 
-Nuke의 느린 속도 및 렌더 실패에 관한 추가 정보:
+### Nuke의 느린 속도 및 렌더 실패에 관한 추가 정보:
 
 Nuke가 느릴 때:
 
