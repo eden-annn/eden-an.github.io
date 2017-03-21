@@ -11,7 +11,7 @@ tags: [nuke,compositing]
 번역 전 원작자의 허락을 위해 연락을 취했지만 끝내 회신을 받지 못했습니다. 혹시 원작자를 아시거나 관련된 분이시라면 코멘트를 남겨주시면 감사드리겠습니다.
 아울러서 글을 제공해주신 Scott에게 감사의 말씀을 전합니다.
 
-[출처 : 10 tips to optimising Nuke and creating efficient workflows](http://www.nukepedia.com/written-tutorials/10-tips-to-optimising-nuke-and-creating-efficient-workflows)
+[원문 10 tips to optimising Nuke and creating efficient workflows](http://www.nukepedia.com/written-tutorials/10-tips-to-optimising-nuke-and-creating-efficient-workflows)
 
 공부할 겸 처음해보는 번역 작업이라서 오역이 많을 수 있습니다. 잘못된 내용은 지적해주시면 수정하겠습니다.
 
