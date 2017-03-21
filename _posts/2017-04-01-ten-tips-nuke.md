@@ -4,7 +4,7 @@ title:      Nuke를 최적화하고 효율적인 작업공정을 위한 10가지
 date:       2017-04-01 06:12:42
 summary:    지나치기 쉽지만 알아두면 퇴근을 앞당기는 10가지 Nuke 최적화 팁
 category: study
-tags: [rv,prores]
+tags: [nuke,compositing]
 ---
 
 아래 내용은 2010년 6월 29일에 Scott Chambers에 의해 작성된 글로 당시 Nuke 6.0 버전을 기준으로 작성되었습니다.
