@@ -23,6 +23,9 @@ layout: default
             {% capture category_content %}<a href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
           {% endif %}
           <!-- tag -->
+          {{ tag.name }}
+          {{ page.slug }}
+          {{ tags_content }}
           {% if post.tags.size > 0 %}
             {% capture tags_content %} | {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}{% endcapture %}
             {% for post_tag in post.tags %}
