@@ -1,5 +1,23 @@
 - slug: github
   name: Github
 
-- slug: jekyll
-  name: Jekyll
+- slug: fps
+  name: fps
+
+- slug: linux
+  name: Linux
+
+- slug: nuke
+  name: Nuke
+
+- slug: programming
+  name: Programming
+
+- slug: python
+  name: Python
+
+- slug: rv
+  name: RV
+
+- slug: shell
+  name: Shell
