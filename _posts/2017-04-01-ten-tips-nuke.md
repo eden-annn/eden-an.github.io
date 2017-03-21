@@ -11,11 +11,13 @@ tags: [nuke,compositing]
 번역 전 원작자의 허락을 위해 연락을 취했지만 끝내 회신을 받지 못했습니다. 혹시 원작자를 아시거나 관련된 분이시라면 코멘트를 남겨주시면 감사드리겠습니다.
 아울러서 글을 제공해주신 Scott에게 감사의 말씀을 전합니다.
 
-[출처](http://www.nukepedia.com/written-tutorials/10-tips-to-optimising-nuke-and-creating-efficient-workflows)
+[출처링크](http://www.nukepedia.com/written-tutorials/10-tips-to-optimising-nuke-and-creating-efficient-workflows)
 
 ### 1. B PIPE
 
 모든 Merge단계의 메인을 B input에 연결하세요 - 이는 노드 중간에 있는 Merge를 disable하더라도 이미지가 끊기지 않고 그대로 유지되는 장점도 있습니다. Shake의 Mask 'inside'와 'outside'처럼 Merge노드의 'mask'와 'stencil' 옵션에도 익숙해져야 합니다.
+
+<center><img src="https://cloud.githubusercontent.com/assets/25483610/24147296/ea5fd972-0e7c-11e7-8b1b-aff04b5cd72c.png"></center>
 
 ### 2. BBOX
 
@@ -26,10 +28,14 @@ Merge 노드를 사용할 때 최소한의 bbox 영역을 고려하여 적절한
 
 precomp 같은 exr 시퀀스를 렌더할 때, Write 노드에서 'autocrop' 옵션을 체크할 수 있습니다. 해당 옵션은 exr 렌더에만 나타납니다. 이는 꽤 많은 메모리를 사용하므로 렌더속도가 느릴 수 있지만, 최초 한번만 하면 되고 시퀀스를 불러왔을 때 bbox가 포함되어 있을 것입니다.
 
+<center><img src="https://cloud.githubusercontent.com/assets/25483610/24147298/ed4c2960-0e7c-11e7-9e27-d37db0feb95a.png"></center>
+
 ### 3. Transform 노드의 연속성
 
 Transform 노드는 연속으로 연결해서 플레이트나 각각의 요소들의 무결성(역주: 이하 퀄리티)을 유지시켜야합니다. 왜냐면, 근본적으로 픽셀에 필터링(transform, convolves, blur 등), 즉 변화를 줄때마다 시각적 cheat인 필터 알고리즘으로 인해 근사치의 새로운 픽셀이 나타납니다. 이는 이미지 퀄리티를 저하시키고 - 일반적으로 그 정도는 미세하지만 - 이러한 문제가 쌓이다보면 플레이트나 각각의 요소에 원치 않은 이미지 결함이 나타나기 시작합니다. 역속된 다수의 Transform 노드들은 수학적으로 한 번의 연산만을 합니다. 이는 Transform 작업을 여러개의 노드를 통해 효율적으로 작업할 수 있어서 유용하며 Nuke의 3d 환경은 2d transform 노드와도 연결됩니다. 한 요소를 움직이는데, 각각의 X/Y, scale, rotate의 독립적으로 제어할 수 있습니다. 이렇게 연산을 하는 3개의 노드로 분리함으로써 transform 작업을 조절하거나 제거 또는 빠르게 비활성화할 수 있습니다. 만약 Nuke가 3개의 Transform 노드를 이어서 처리하지 않았다면, 이미지는 각 단계마다 손실될 것 입니다.
 다행히도 Nuke는 문제없습니다. 단, 한가지 중요한 규칙만 따른다면 말이죠. Transform 노드 사이를 Color correct나 Merge 노드로 연결을 끊으면 안됩니다. Shake에서는 편리하게도 Transform 노드의 연속성을 시각적인 초록색 라인으로 표시해주는 피드백이 있었지만, Nuke는 그런 표시가 없습니다.(아직이요? 제발!)
+
+<center><img src="https://cloud.githubusercontent.com/assets/25483610/24147301/f04f0768-0e7c-11e7-990c-320da097983b.png"></center>
 
 ### 4. CARD3D
 
@@ -46,6 +52,8 @@ Nuke의 Defocus 노드는 꽤 빠르지만, Blur 노드가 더 빠릅니다. 'Bo
 ### 7. LOWER RES / LESS FRAMES PREVIEW
 
 낮은 해상도 / 프레임 속도로 작업합니다. Shot 작업을 진행할 때 항상 모든 프레임을 Full resolution으로 볼 필요는 없습니다. 프록시 모드에서 작업을 할 수 있고, 작업중인 화면을 빠르게 프록시 모드로 렌더링할 수도 있습니다. 물론 파이널 렌더나, Full resolution이 필요할때도 있지만, 간단한 comp 에러나 solving 에러 확인을 할 때는 프록시 사이즈 렌더링이 더 효과적입니다. 프레임도 마찬가지입니다. 초기 컴프 작업 단계에서 모든 프레임 대신 5 프레임마다 렌더링할 수 있습니다. 렌더링 시간은 5배 빨라지고(예를 들어 50분에서 10분으로) 대부분의 에러를 발견할 수 있습니다. 보통은 각 프레임을 보며 작업하기 떄문에 이 방식을 항상 사용할 수는 없지만, 렌더 속도를 빠르게 해서 당신와 당신의 팀의 렌더 시간을 절약할 수 있습니다. Flipbook 뷰어는 다양한 프레임 레이트로 재생이 가능하기 때문에 5 프레임 단위로 렌더링 한 경우 원래 속도의 20%로 재생해야 할겁니다. 당연히 이상하게 보이겠지만 you will get the idea of timing. 만약 2 프레임 단위로 렌더링을 해서 2배가 빨라지더라도, 이 방식은 한번 생각해볼만한 가치가 있습니다.
+
+<center><img src="https://cloud.githubusercontent.com/assets/25483610/24147303/f346890a-0e7c-11e7-8a6f-b8d871dc1698.png"></center>
 
 ### 8. PRECOMP
 
