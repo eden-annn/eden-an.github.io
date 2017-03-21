@@ -2,7 +2,7 @@
 layout:     post
 title:      RV Player for Apple ProRes
 date:       2017-02-15 01:22:23
-summary:RV플레이어에서도 Apple ProRes 영상을 플레이할 수 있다. 그것도 매우 간단하게!
+summary:    RV플레이어에서도 Apple ProRes 영상을 플레이할 수 있다. 그것도 매우 간단하게!
 category: til
 tags: [rv,prores]
 ---
