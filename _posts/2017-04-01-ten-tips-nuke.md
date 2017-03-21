@@ -11,7 +11,7 @@ tags: [nuke,compositing]
 번역 전 원작자의 허락을 위해 연락을 취했지만 끝내 회신을 받지 못했습니다. 혹시 원작자를 아시거나 관련된 분이시라면 코멘트를 남겨주시면 감사드리겠습니다.
 아울러서 글을 제공해주신 Scott에게 감사의 말씀을 전합니다.
 
-[원본 글](http://www.nukepedia.com/written-tutorials/10-tips-to-optimising-nuke-and-creating-efficient-workflows)
+[출처](http://www.nukepedia.com/written-tutorials/10-tips-to-optimising-nuke-and-creating-efficient-workflows)
 
 ### 1. B PIPE
 
@@ -20,7 +20,6 @@ tags: [nuke,compositing]
 ### 2. BBOX
 
 작업하는 모든 요소의 bbox(bounding box)를 최적화해야 합니다. 만약 풀프레임 이미지라면 bbox가 (blur나 transform 등으로 인해) 전체 포맷보다 커지지 않게 주의해야하고, 풀프레임보다 작다면 bbox가 타이트하게 이미지 영역을 감싸고 있어야 합니다.
-
 Merge 노드를 사용할 때 최소한의 bbox 영역을 고려하여 적절한 'set bbox to' 옵션을 선택하는 것이 중요합니다.
 
 3D파트에서는 EXR 파일의 CG pass를 렌더할 때 바운딩박스(역주: autocrop)를 함께 렌더링해줘야 하지만, 그렇지 않다면 직접 만들어줄 수도 있습니다. Curve노드의 AutoCrop 기능을 사용하면 pixel값이 0인 zero data 영역을 기준으로 CG 요소 주변의 바운딩박스 데이터를 측정할 수 있습니다. 그런 다음, 해당 데이터를 복사해서 Crop노드 영역으로 사용합니다.
@@ -76,12 +75,10 @@ Tiff파일은 무조건 피하세요. 그 메모리 돼지는 인쇄용이지 �
 렌더에 실패할 때:
 
 - RGBA 채널이 Cineon 포맷으로 들어가는 경우(DPX와 CINEON파일 포맷은 공식적으로 alpha 채널을 지원하지 않습니다. - 이는 심각한 문제를 야기할 수 있습니다)
-
 - 잘못된 Nuke 또는 plugin 버전
 - Write 노드에서의 순서로 인한 충돌(Read 노드가 항상 먼저 데이터를 읽어오고 그 다음 Write노드가 렌더링됩니다.)
 - precomp output에서의 alpha channel 부재(render order 옵션을 사용해서 여러개의 write노드를 사용할 때)
 - Output 폴더가 존재하지 않을 때
-
 - 아직 렌더링이 완료되지 않은 파일을 읽을 때(CG 시퀀스 같은) "zib decompression error"
 - Write 노드에서 proxy 옵션의 file path를 지정하지 않고 proxy 렌더링을 시도할 때
 - Time 관련 노드들(FrameHold, TimeOffset 등) - 보통은 잘 작동되지만 가끔씩 예기치 않은 에러가 발생합니다 - 원하지 않은 프레임을 건너뛴다. 이 문제는 Windows Vista 64bit와 Nuke 6.0과의 의존성에 문제가 있었습니다.
