@@ -9,6 +9,8 @@ tags: about
 Eden SeongGyeong An<br />
 Visual effects compositing TD at 4th Creative Party
 
+e-mail : eden.annn@gmail.com
+sns : [LinkedIn](https://www.linkedin.com/in/edenan/)
 
 ## Work Experience
 Compositing Technical Director - 4th Creative Party<br />
