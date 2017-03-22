@@ -35,14 +35,14 @@ Merge 노드를 사용할 때는 최소한의 bbox 영역을 고려하여 적절
 
 exr 시퀀스를 렌더할 때, Write 노드에서 'autocrop' 옵션을 체크할 수 있습니다. 해당 옵션은 exr 전용 옵션입니다. 이는 꽤 많은 메모리를 사용하므로 렌더속도가 느릴 수 있지만, 최초 한번의 렌더링으로 bbox가 포함된 시퀀스를 사용할 수 있습니다.
 
-<center><img src="https://cloud.githubusercontent.com/assets/25483610/24147298/ed4c2960-0e7c-11e7-9e27-d37db0feb95a.png"></center>
+_![BBOX](https://cloud.githubusercontent.com/assets/25483610/24147298/ed4c2960-0e7c-11e7-9e27-d37db0feb95a.png)
 
 ### 3. Transform 노드의 연속성
 
 Transform 노드는 연속으로 연결해서 플레이트나 각 요소들의 무결성(퀄리티)을 유지시켜야합니다. 왜냐하면, 근본적으로 픽셀은 필터링(transform, convolves, blur 등), 즉 변화를 줄때마다 시각적 cheat인 필터 알고리즘으로 인해 근사치의 새로운 픽셀이 나타납니다. 이는 이미지 퀄리티를 저하시키고 - 일반적으로 그 정도는 미세하지만 - 이러한 문제가 쌓이다 보면 플레이트나 각각의 요소에 원치 않은 이미지 결함이 나타나기 시작합니다. 역속된 다수의 Transform 노드들은 수학적으로 한 번의 연산만을 합니다. 이로 인해 Transform 작업을 여러개의 노드로 나눠 효율적으로 컨트롤 할 수 있고 Nuke의 3d 환경은 2d transform 노드와도 연결됩니다. 한 요소를 움직이는데, 각각의 X/Y, scale, rotate의 독립적으로 제어할 수 있습니다. 이렇게 3개의 노드로 분리함으로써 transform을 조절하거나 제거 또는 빠르게 비활성화할 수 있습니다. 만약 Nuke가 3개의 Transform 노드를 한번에 처리하지 않았다면, 이미지는 각 단계마다 손실될 것 입니다.
 다행히도 Nuke는 이 문제에 대해서 자유롭습니다. 단, 한가지 중요한 규칙만 따른다면 말이죠. Transform 노드 사이를 Color correct나 Merge 노드로 연결을 끊으면 안됩니다. Shake에서는 편리하게도 Transform 노드의 연속성을 시각적인 초록색 라인으로 표시해주는 피드백이 있었지만, Nuke는 그런 표시가 없습니다.(아직이요? 제발!)
 
-<center><img src="https://cloud.githubusercontent.com/assets/25483610/24147301/f04f0768-0e7c-11e7-990c-320da097983b.png"></center>
+_![Transform](https://cloud.githubusercontent.com/assets/25483610/24147301/f04f0768-0e7c-11e7-990c-320da097983b.png)
 
 ### 4. CARD3D
 
@@ -67,7 +67,7 @@ Nuke의 Defocus 노드는 꽤 빠르지만, Blur 노드가 더 빠릅니다. 'Bo
 
 또 Nuke에는 스크립트 파일에서 선택한 노드들을 새로운 스크립트로 저장하는 'precomp' 노드가 있고, write 노드도 함께 포함되어 있습니다. 또한 precomp된 스크립트 버전 관리를 할 수 있고, 아웃풋을 메인 comp로 연결할 수도 있습니다. precomp 스크립트에서 exr 시퀀스가 새로 렌더링 됐다면, Nuke는 해당 시퀀스가 예전 버전임을 자동으로 감지합니다(Nuke는 이를 위해 exr 데이터에 내부에 있는 노드 hash 정보를 이용합니다). 자신만의 방법으로 precomp 노드를 사용할 수 있지만, 필자는 메인 스크립트에서 read/write로 사용하는 것을 선호합니다. 주로 협업(예를 들어 라이팅 아티스트 또는 다른 컴포지터)을 위해 사용합니다. 보다 자세한 내용은 Nuke user manual을 참고하세요.
 
-<center><img src="https://cloud.githubusercontent.com/assets/25483610/24147303/f346890a-0e7c-11e7-8a6f-b8d871dc1698.png"></center>
+_![PRECOMP](https://cloud.githubusercontent.com/assets/25483610/24147303/f346890a-0e7c-11e7-8a6f-b8d871dc1698.png)
 
 ### 9. RENDER LOCALLY
 
