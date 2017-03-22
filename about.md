@@ -1,6 +1,6 @@
 ---
 layout: page
-title: I'm Eden
+title: About
 permalink: /about/
 tags: about
 ---
