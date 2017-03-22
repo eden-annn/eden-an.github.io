@@ -7,7 +7,6 @@ tags: about
 
 ## About me
 Eden SeongGyeong An<br />
-Visual effects compositing TD at 4th Creative Party
 
 mail : eden.annn@gmail.com<br />
 sns : [LinkedIn](https://www.linkedin.com/in/edenan/)
