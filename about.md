@@ -6,6 +6,7 @@ tags: about
 ---
 
 ## About me
+SeongGyeong 'Eden' An
 Visual effects compositing TD at 4th Creative Party
 
 
