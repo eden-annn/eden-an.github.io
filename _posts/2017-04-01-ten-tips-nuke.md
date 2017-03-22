@@ -24,7 +24,7 @@ tags: [nuke,compositing]
 
 모든 Merge단계의 메인을 B input에 연결하세요 - 이는 노드 중간에 있는 Merge를 disable하더라도 이미지가 끊기지 않고 그대로 유지되는 장점도 있습니다. 이를 위해 Shake의 Mask 'inside'/'outside'처럼 Merge노드의 'mask'와 'stencil' 옵션을 사용할 수 있습니다.
 
-<center><img src="https://cloud.githubusercontent.com/assets/25483610/24147296/ea5fd972-0e7c-11e7-8b1b-aff04b5cd72c.png"></center>
+<center>![B PIPE](https://cloud.githubusercontent.com/assets/25483610/24147296/ea5fd972-0e7c-11e7-8b1b-aff04b5cd72c.png)</center>
 
 ### 2. BBOX
 
