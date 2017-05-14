@@ -10,9 +10,12 @@ tags: [nuke,compositing]
 영어공부도 할 겸 앞으로 시간이 허락 될 때마다 제 분야와 관련된 유익한 글들을 번역해보려고 합니다.
 처음해보는 작업이라서 오역이 많을 수 있습니다. 잘못된 내용은 지적해주시면 수정하겠습니다.
 
-아래 내용은 2010년 6월 29일에 Scott Chambers에 의해 작성된 글로 당시 Nuke 6.0 버전을 기준으로 작성되었습니다.
-번역 전 원작자의 허락을 위해 연락을 취했지만 끝내 회신을 받지 못했습니다. 혹시 원작자를 아시거나 관련된 분이시라면 코멘트를 남겨주시면 감사드리겠습니다.
-아울러서 전해질지는 모르겠지만 훌륭한 글을 작성해주신 Scott님에게 감사의 말씀을 전합니다.
+아래 내용은 2010년 6월 29일에 Scott Chambers(현 Weta Digital의 Compositing Supervisor)에 의해 작성된 글로 당시 Nuke 6.0 버전을 기준으로 작성되었습니다.
+<del>번역 전 원작자의 허락을 위해 연락을 취했지만 끝내 회신을 받지 못했습니다. 혹시 원작자를 아시거나 관련된 분이시라면 코멘트를 남겨주시면 감사드리겠습니다.
+아울러서 전해질지는 모르겠지만 훌륭한 글을 작성해주신 Scott님에게 감사의 말씀을 전합니다.</del>
+
+Weta에서 함께 일하고 계시는 분께서 대신 감사의 말씀을 전해주셨습니다. (영빈님 감사합니다!)
+
 
 [원문: 10 tips to optimising Nuke and creating efficient workflows](http://www.nukepedia.com/written-tutorials/10-tips-to-optimising-nuke-and-creating-efficient-workflows)
 
