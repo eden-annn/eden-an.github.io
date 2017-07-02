@@ -27,3 +27,6 @@
 
 - slug: compositing
   name: Compositing
+
+- slug: camera
+  name: Camera
