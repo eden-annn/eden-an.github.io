@@ -6,35 +6,7 @@ summary:    셔터앵글에 대하여...
 category: translate
 tags: [nuke,compositing]
 ---
-...
-
-### 1. B PIPE
-
-모든 Merge단계의 메인을 B input에 연결하세요 - 이는 노드 중간에 있는 Merge를 disable하더라도 이미지가 끊기지 않고 그대로 유지되는 장점도 있습니다. 이를 위해 Shake의 Mask 'inside'/'outside'처럼 Merge노드의 'mask'와 'stencil' 옵션을 사용할 수 있습니다.
-
 _![B PIPE](https://cloud.githubusercontent.com/assets/25483610/24147296/ea5fd972-0e7c-11e7-8b1b-aff04b5cd72c.png)
-
-### 2. BBOX
-
-작업하는 모든 요소의 bbox(bounding box)를 최적화해야 합니다. 만약 풀프레임 이미지라면 bbox가 (blur나 transform 등으로 인해) 전체 포맷보다 커지지 않게 주의해야 하고, 풀프레임보다 작다면 bbox가 타이트하게 이미지 영역을 감싸고 있어야 합니다.
-Merge 노드를 사용할 때는 최소한의 bbox 영역을 고려하여 적절한 'set bbox to' 옵션을 선택하는 것이 중요합니다.
-
-3D파트에서는 EXR CG pass를 렌더할 때 바운딩박스(역주: autocrop)를 함께 렌더링해줘야 하지만, 그렇지 않다면 직접 만들어줄 수도 있습니다. Curve 노드의 AutoCrop 기능을 사용하면 pixel값이 0인 zero data 영역을 기준으로 바운딩박스 데이터를 측정할 수 있습니다. 그런 다음, 해당 데이터를 복사해서 Crop 노드 영역으로 사용합니다.
-
-exr 시퀀스를 렌더할 때, Write 노드에서 'autocrop' 옵션을 체크할 수 있습니다. 해당 옵션은 exr 전용 옵션입니다. 이는 꽤 많은 메모리를 사용하므로 렌더속도가 느릴 수 있지만, 최초 한번의 렌더링으로 bbox가 포함된 시퀀스를 사용할 수 있습니다.
-
-_![BBOX](https://cloud.githubusercontent.com/assets/25483610/24147298/ed4c2960-0e7c-11e7-9e27-d37db0feb95a.png)
-
-### 3. Transform 노드의 연속성
-
-Transform 노드는 연속으로 연결해서 플레이트나 각 요소들의 무결성(퀄리티)을 유지시켜야합니다. 왜냐하면, 근본적으로 픽셀은 필터링(transform, convolves, blur 등), 즉 변화를 줄때마다 시각적 cheat인 필터 알고리즘으로 인해 근사치의 새로운 픽셀이 나타납니다. 이는 이미지 퀄리티를 저하시키고 - 일반적으로 그 정도는 미세하지만 - 이러한 문제가 쌓이다 보면 플레이트나 각각의 요소에 원치 않은 이미지 결함이 나타나기 시작합니다. 역속된 다수의 Transform 노드들은 수학적으로 한 번의 연산만을 합니다. 이로 인해 Transform 작업을 여러개의 노드로 나눠 효율적으로 컨트롤 할 수 있고 Nuke의 3d 환경은 2d transform 노드와도 연결됩니다. 한 요소를 움직이는데, 각각의 X/Y, scale, rotate의 독립적으로 제어할 수 있습니다. 이렇게 3개의 노드로 분리함으로써 transform을 조절하거나 제거 또는 빠르게 비활성화할 수 있습니다. 만약 Nuke가 3개의 Transform 노드를 한번에 처리하지 않았다면, 이미지는 각 단계마다 손실될 것 입니다.
-다행히도 Nuke는 이 문제에 대해서 자유롭습니다. 단, 한가지 중요한 규칙만 따른다면 말이죠. Transform 노드 사이를 Color correct나 Merge 노드로 연결을 끊으면 안됩니다. Shake에서는 편리하게도 Transform 노드의 연속성을 시각적인 초록색 라인으로 표시해주는 피드백이 있었지만, Nuke는 그런 표시가 없습니다.(아직이요? 제발!)
-
-_![Transform](https://cloud.githubusercontent.com/assets/25483610/24147301/f04f0768-0e7c-11e7-990c-320da097983b.png)
-
-
-
-
 흔히(저를 포함해서) Shutter Speed로 많이 알고 방식이 영상을 촬영하는 카메라와 마야, 후디니, 누크 등 여러 DCC(Digital Content Creation) 툴에서는  Shutter Angle이라는 방식으로 사용되고 있습니다. 최근 Shutter Angle에 관하여 다룰 기회가 있어 조사하던 중 개념적인 설명으로 좋은 아티클이 있어서 번역후에 공유합니다.
 
 아래는 카메라 제조사인 RED의 공식사이트에 있는 Shutter Angle에 관한 글을 번역한 내용입니다.
