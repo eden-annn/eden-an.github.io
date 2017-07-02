@@ -21,7 +21,7 @@ Digital Cinematography(디지털 영화 촬영 기술)의 출현은 움직임, �
 ### CONCEPT
 Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 유용한 방법입니다. 이는 회전식 셔터로써, 개구부 각도를 가지고 있는 디스크가 회전하면서 각 프레임을 한번씩 빛에 노출시킵니다. 개각도가 클수록 -최대 360도까지 개방하면 Frame-rate만큼- 셔터 스피드가 느려집니다. 뒤집어서 얘기하면, 개각도를 줄임으로써 셔터 스피드를 빠르게 할 수 있습니다.
 
-<img src='https://cloud.githubusercontent.com/assets/25483610/24147296/ea5fd972-0e7c-11e7-8b1b-aff04b5cd72c.png'>
+<center><img src="https://cloud.githubusercontent.com/assets/25483610/23003508/8f383e5c-f434-11e6-99e9-8027f6ef37e1.png"></center>
 
 [Sutter Angle] https://cloud.githubusercontent.com/assets/25483610/24147296/ea5fd972-0e7c-11e7-8b1b-aff04b5cd72c.png
 
