@@ -24,8 +24,7 @@ Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 
 <center><img src='https://user-images.githubusercontent.com/25483610/27769016-ca3464b2-5f5b-11e7-9920-209b57af9b4b.png'></center>
 
 <center><span style='font-size:11px'>[3가지 Shutter Angle에 따른 노출시간]</span></center>
-
-
+<br />
 최신 카메라가 이러한 방식으로 셔터 스피드를 조절할 필요는 없지만, 아직까지도 Shutter angle 이라는 용어 자체는 영상의 모션 블러에 대한 간단하고 보편적인 설명 방법으로 사용되고 있습니다. 프레임 안에서의 특정 피사체에 이전/다음 프레임 간 더 큰 모션 블러를 주기 위해서는 큰 개각도를 선택해야 하며, 그 반대의 경우도 마찬가지입니다:
 
 <table border='0' width='100%'>
@@ -58,8 +57,7 @@ Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 
 </table>
 
 <center><span style='font-size:11px'>[Overlaid Motion Blur vs. Shutter Angle]</span></center>
-
-
+<br />
 위 예제 이미지는 기본적인 작동을 이해하는데 도움이 되지만, 스틸 이미지처럼 프레임 간 모션블러는 확인하기 어렵습니다.
 실제로, 셔터 앵글은 -정확한 수치를 인식하지 못하더라도- 영상의 전반적인 느낌에 주관적인 영향을 미칩니다. 아래 예제를 클릭하여 차이점을 확인해보세요:
 
@@ -69,8 +67,7 @@ Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 
 <td style='border:0;font-size:11px;' align='center'><a href='http://vimeo.com/44694756' target='_blank'><img src="https://user-images.githubusercontent.com/25483610/27769017-d5715718-5f5b-11e7-8377-f0075d2147ff.png"></a><br />360° Shutter Angle</td>
 </tr>
 </table>
-
-
+<br />
 셔터 앵글의 차이가 달리기가 시작하는 시점(움직임이 가장 먼 경우)에서는 거의 눈에 띄지 않지만, 어린이가 카메라에 가까워질수록 더 명확해지는 것을 확인해보세요. 아래의 이미지는 모션블러의 차이가 가장 두드러질 때를 극적으로 보여줍니다.
 
 <table border='0' width='100%'>
@@ -79,7 +76,7 @@ Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 
 <td style='border:0;font-size:11px;' align='center'><a href='http://vimeo.com/44694756' target='_blank'><img src="https://user-images.githubusercontent.com/25483610/27769020-d58b1298-5f5b-11e7-8045-914bb425a35a.jpg"></a><br />STILL FRAME FROM 360° VIDEO</td>
 </tr>
 </table>
-
+<br />
 ### DISCUSSION
 
 많은 필름 카메라가 특정 범위의 셔터 앵글만 사용 가능했지만, 디지털은 수많은 새로운 가능성(exciting new possibilities)을 제공합니다. 초점거리(Focal-Length)와 조리개(Aperture)가 스케일감과 피사계 심도(Depth of field)를 조절하는데 창의적인 도구로 사용 된 것처럼 셔터앵글은 모션블러에 대해 동일한 역할을 수행합니다.
