@@ -32,9 +32,9 @@ Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 
 <td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769013-c2a5478e-5f5b-11e7-9c92-d9be3bea59a3.png"><br />45°</td>
 <td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769006-c25e2c8c-5f5b-11e7-8d07-eecc42592d09.png"><br />180°</td>
 </tr>
-<tr style='border:0'>
+<tr>
 <td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769005-c25e28f4-5f5b-11e7-85bd-f63874724598.png"><br />270°</td>
-<td align='center'><img src="https://user-images.githubusercontent.com/25483610/27769007-c26126c6-5f5b-11e7-883c-cf925a9d5934.png"><br />360°</td>
+<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769007-c26126c6-5f5b-11e7-883c-cf925a9d5934.png"><br />360°</td>
 </tr>
 </table>
 <center>[연속하는 3프레임에 대한 노출 타임라인]</center>
@@ -42,9 +42,17 @@ Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 
 ### APPEARANCE
 보통 영화에서는 일반적으로 180°에 가까운 셔터 앵글을 사용하고, 이는 24fps 기준 1/48의 셔터 스피드에 가까운 수치입니다. 수치를 더 크게 주면 한 프레임에서의 모션블러 끝이 다음 프레임 모션블러의 시작점과 가까워지면서 움직임이 더 크고 심하게 보입니다. 반대로 작게 주면 모션블러 사이의 갭이 커지면서 프레임이 간 이미지가 불규칙하고 끊겨보이게 됩니다.
 
-
-[연속하는 3프레임에 대한 고정모션]
-
+<table border='0' width='100%'>
+<tr><td colspan='2' align='center'><img src='https://user-images.githubusercontent.com/25483610/27769008-c2648dca-5f5b-11e7-86ce-25ac31ef9076.png'><br />[3프레임 고정모션]</td></tr>
+<tr>
+<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769009-c274726c-5f5b-11e7-8d67-71d5dc96fb5f.png"><br />45°</td>
+<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769011-c28a45e2-5f5b-11e7-9f7c-ba7076ad0bd7.png"><br />180°</td>
+</tr>
+<tr>
+<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769012-c28bd380-5f5b-11e7-86d1-7cc679b96d0e.png"><br />270°</td>
+<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769010-c28a5ab4-5f5b-11e7-982a-0164d486e20c.png"><br />360°</td>
+</tr>
+</table>
 [Overlaid Motion Blur vs. Shutter Angle]
 
 
