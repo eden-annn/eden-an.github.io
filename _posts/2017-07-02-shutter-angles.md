@@ -21,14 +21,19 @@ Digital Cinematography(디지털 영화 촬영 기술)의 출현은 움직임, �
 ### CONCEPT
 Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 유용한 방법입니다. 이는 회전식 셔터로써, 개구부 각도를 가지고 있는 디스크가 회전하면서 각 프레임을 한번씩 빛에 노출시킵니다. 개각도가 클수록 -최대 360도까지 개방하면 Frame-rate만큼- 셔터 스피드가 느려집니다. 뒤집어서 얘기하면, 개각도를 줄임으로써 셔터 스피드를 빠르게 할 수 있습니다.
 
-Exposure Duration (in Red) at Three Shutter Angles
+_![Sutter Angle](https://user-images.githubusercontent.com/25483610/27769016-ca3464b2-5f5b-11e7-9920-209b57af9b4b.png)
+3가지 Shutter Angle에 따른 노출시간
 
 최신 카메라가 이러한 방식으로 셔터 스피드를 조절할 필요는 없지만, 아직까지도 Shutter angle 이라는 용어 자체는 영상의 모션 블러에 대한 간단하고 보편적인 설명 방법으로 사용되고 있습니다. 프레임 안에서의 특정 피사체에 이전/다음 프레임 간 더 큰 모션 블러를 주기 위해서는 큰 개각도를 선택해야 하며, 그 반대의 경우도 마찬가지입니다:
 
-Exposure Timeline for Three Successive Frames
+_![45°](https://user-images.githubusercontent.com/25483610/27769013-c2a5478e-5f5b-11e7-9c92-d9be3bea59a3.png)
+_![180°](https://user-images.githubusercontent.com/25483610/27769006-c25e2c8c-5f5b-11e7-8d07-eecc42592d09.png)
+_![270°](https://user-images.githubusercontent.com/25483610/27769005-c25e28f4-5f5b-11e7-85bd-f63874724598.png)
+_![360°](https://user-images.githubusercontent.com/25483610/27769007-c26126c6-5f5b-11e7-883c-cf925a9d5934.png)
+연속되는 3프레임에 대한 노출 타임라인
 
 ### APPEARANCE
-보통 영화에서는 일반적으로 180도에 가까운 셔터 앵글을 사용하고, 이는 24fps 기준 1/48의 셔터 스피드에 가까운 수치입니다. 수치를 더 크게 주면 한 프레임에서의 모션블러 끝이 다음 프레임 모션블러의 시작점과 가까워지면서 움직임이 더 크고 심하게 보입니다. 반대로 작게 주면 모션블러 사이의 갭이 커지면서 프레임이 간 이미지가 불규칙하고 끊겨보이게 됩니다.
+보통 영화에서는 일반적으로 180°에 가까운 셔터 앵글을 사용하고, 이는 24fps 기준 1/48의 셔터 스피드에 가까운 수치입니다. 수치를 더 크게 주면 한 프레임에서의 모션블러 끝이 다음 프레임 모션블러의 시작점과 가까워지면서 움직임이 더 크고 심하게 보입니다. 반대로 작게 주면 모션블러 사이의 갭이 커지면서 프레임이 간 이미지가 불규칙하고 끊겨보이게 됩니다.
 
 [공 모션블러]
 
