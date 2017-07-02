@@ -33,15 +33,21 @@ Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 
 <img src="https://user-images.githubusercontent.com/25483610/27769013-c2a5478e-5f5b-11e7-9c92-d9be3bea59a3.png"><br />45°
 </td>
 <td>
-180° ![180°](https://user-images.githubusercontent.com/25483610/27769006-c25e2c8c-5f5b-11e7-8d07-eecc42592d09.png)
+<img src="https://user-images.githubusercontent.com/25483610/27769006-c25e2c8c-5f5b-11e7-8d07-eecc42592d09.png"><br />180°
 </td>
 </tr>
+<tr>
+<td>
+<img src="https://user-images.githubusercontent.com/25483610/27769005-c25e28f4-5f5b-11e7-85bd-f63874724598.png"><br />270°
+</td>
+<td>
+<img src="https://user-images.githubusercontent.com/25483610/27769007-c26126c6-5f5b-11e7-883c-cf925a9d5934.png"><br />360°
+</td>
+</tr>
+<tr>
+<td colspan='2'><small>[연속하는 3프레임에 대한 노출 타임라인]</small></td>
+</tr>
 </table>
-270° ![270°](https://user-images.githubusercontent.com/25483610/27769005-c25e28f4-5f5b-11e7-85bd-f63874724598.png)
-
-360° ![360°](https://user-images.githubusercontent.com/25483610/27769007-c26126c6-5f5b-11e7-883c-cf925a9d5934.png)
-
-[연속하는 3프레임에 대한 노출 타임라인]
 
 ### APPEARANCE
 보통 영화에서는 일반적으로 180°에 가까운 셔터 앵글을 사용하고, 이는 24fps 기준 1/48의 셔터 스피드에 가까운 수치입니다. 수치를 더 크게 주면 한 프레임에서의 모션블러 끝이 다음 프레임 모션블러의 시작점과 가까워지면서 움직임이 더 크고 심하게 보입니다. 반대로 작게 주면 모션블러 사이의 갭이 커지면서 프레임이 간 이미지가 불규칙하고 끊겨보이게 됩니다.
