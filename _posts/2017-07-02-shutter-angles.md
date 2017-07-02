@@ -27,34 +27,35 @@ Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 
 
 최신 카메라가 이러한 방식으로 셔터 스피드를 조절할 필요는 없지만, 아직까지도 Shutter angle 이라는 용어 자체는 영상의 모션 블러에 대한 간단하고 보편적인 설명 방법으로 사용되고 있습니다. 프레임 안에서의 특정 피사체에 이전/다음 프레임 간 더 큰 모션 블러를 주기 위해서는 큰 개각도를 선택해야 하며, 그 반대의 경우도 마찬가지입니다:
 
-<table border='0' width='100%' style='font-size:11px;'>
+<table border='0' width='100%'>
 <tr>
-<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769013-c2a5478e-5f5b-11e7-9c92-d9be3bea59a3.png"><br />45°</td>
-<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769006-c25e2c8c-5f5b-11e7-8d07-eecc42592d09.png"><br />180°</td>
+<td style='border:0;font-size:11px;' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769013-c2a5478e-5f5b-11e7-9c92-d9be3bea59a3.png"><br />45°</td>
+<td style='border:0;font-size:11px;' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769006-c25e2c8c-5f5b-11e7-8d07-eecc42592d09.png"><br />180°</td>
 </tr>
 <tr>
-<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769005-c25e28f4-5f5b-11e7-85bd-f63874724598.png"><br />270°</td>
-<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769007-c26126c6-5f5b-11e7-883c-cf925a9d5934.png"><br />360°</td>
+<td style='border:0;font-size:11px;' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769005-c25e28f4-5f5b-11e7-85bd-f63874724598.png"><br />270°</td>
+<td style='border:0;font-size:11px;' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769007-c26126c6-5f5b-11e7-883c-cf925a9d5934.png"><br />360°</td>
 </tr>
 </table>
-<center><font size='11px'>[연속하는 3프레임에 대한 노출 타임라인]</font></center>
+
+<center><font size='11pt'>[연속하는 3프레임에 대한 노출 타임라인]</font></center>
 
 ### APPEARANCE
 보통 영화에서는 일반적으로 180°에 가까운 셔터 앵글을 사용하고, 이는 24fps 기준 1/48의 셔터 스피드에 가까운 수치입니다. 수치를 더 크게 주면 한 프레임에서의 모션블러 끝이 다음 프레임 모션블러의 시작점과 가까워지면서 움직임이 더 크고 심하게 보입니다. 반대로 작게 주면 모션블러 사이의 갭이 커지면서 프레임이 간 이미지가 불규칙하고 끊겨보이게 됩니다.
 
 <table border='0' width='100%'>
-<tr><td style='border:0' colspan='2' align='center'><img src='https://user-images.githubusercontent.com/25483610/27769008-c2648dca-5f5b-11e7-86ce-25ac31ef9076.png'><br />[3프레임 고정모션]</td></tr>
+<tr><td style='border:0;font-size:11px;' colspan='2' align='center'><img src='https://user-images.githubusercontent.com/25483610/27769008-c2648dca-5f5b-11e7-86ce-25ac31ef9076.png'><br />[3프레임 고정모션]</td></tr>
 <tr>
-<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769009-c274726c-5f5b-11e7-8d67-71d5dc96fb5f.png"><br />45°</td>
-<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769011-c28a45e2-5f5b-11e7-9f7c-ba7076ad0bd7.png"><br />180°</td>
+<td style='border:0;font-size:11px;' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769009-c274726c-5f5b-11e7-8d67-71d5dc96fb5f.png"><br />45°</td>
+<td style='border:0;font-size:11px;' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769011-c28a45e2-5f5b-11e7-9f7c-ba7076ad0bd7.png"><br />180°</td>
 </tr>
 <tr>
-<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769012-c28bd380-5f5b-11e7-86d1-7cc679b96d0e.png"><br />270°</td>
-<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769010-c28a5ab4-5f5b-11e7-982a-0164d486e20c.png"><br />360°</td>
+<td style='border:0;font-size:11px;' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769012-c28bd380-5f5b-11e7-86d1-7cc679b96d0e.png"><br />270°</td>
+<td style='border:0;font-size:11px;' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769010-c28a5ab4-5f5b-11e7-982a-0164d486e20c.png"><br />360°</td>
 </tr>
 </table>
-[Overlaid Motion Blur vs. Shutter Angle]
 
+<center><font size='11pt'>[Overlaid Motion Blur vs. Shutter Angle]</font></center>
 
 위 예제 이미지는 기본적인 작동을 이해하는데 도움이 되지만, 스틸 이미지처럼 프레임 간 모션블러는 확인하기 어렵습니다.
 실제로, 셔터 앵글은 -정확한 수치를 인식하지 못하더라도- 영상의 전반적인 느낌에 주관적인 영향을 미칩니다. 아래 예제를 클릭하여 차이점을 확인해보세요:
