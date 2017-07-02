@@ -23,21 +23,21 @@ Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 
 
 <center><img src='https://user-images.githubusercontent.com/25483610/27769016-ca3464b2-5f5b-11e7-9920-209b57af9b4b.png'></center>
 
-[3가지 Shutter Angle에 따른 노출시간]
+<center>[3가지 Shutter Angle에 따른 노출시간]</center>
 
 최신 카메라가 이러한 방식으로 셔터 스피드를 조절할 필요는 없지만, 아직까지도 Shutter angle 이라는 용어 자체는 영상의 모션 블러에 대한 간단하고 보편적인 설명 방법으로 사용되고 있습니다. 프레임 안에서의 특정 피사체에 이전/다음 프레임 간 더 큰 모션 블러를 주기 위해서는 큰 개각도를 선택해야 하며, 그 반대의 경우도 마찬가지입니다:
 
 <table border='0' width='100%'>
-<tr border='0'>
-<td border='0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769013-c2a5478e-5f5b-11e7-9c92-d9be3bea59a3.png"><br />45°</td>
-<td border='0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769006-c25e2c8c-5f5b-11e7-8d07-eecc42592d09.png"><br />180°</td>
+<tr>
+<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769013-c2a5478e-5f5b-11e7-9c92-d9be3bea59a3.png"><br />45°</td>
+<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769006-c25e2c8c-5f5b-11e7-8d07-eecc42592d09.png"><br />180°</td>
 </tr>
-<tr border='0'>
+<tr style='border:0'>
 <td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769005-c25e28f4-5f5b-11e7-85bd-f63874724598.png"><br />270°</td>
 <td align='center'><img src="https://user-images.githubusercontent.com/25483610/27769007-c26126c6-5f5b-11e7-883c-cf925a9d5934.png"><br />360°</td>
 </tr>
 </table>
-[연속하는 3프레임에 대한 노출 타임라인]
+<center>[연속하는 3프레임에 대한 노출 타임라인]</center>
 
 ### APPEARANCE
 보통 영화에서는 일반적으로 180°에 가까운 셔터 앵글을 사용하고, 이는 24fps 기준 1/48의 셔터 스피드에 가까운 수치입니다. 수치를 더 크게 주면 한 프레임에서의 모션블러 끝이 다음 프레임 모션블러의 시작점과 가까워지면서 움직임이 더 크고 심하게 보입니다. 반대로 작게 주면 모션블러 사이의 갭이 커지면서 프레임이 간 이미지가 불규칙하고 끊겨보이게 됩니다.
