@@ -33,7 +33,7 @@ Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 
 <td border='0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769006-c25e2c8c-5f5b-11e7-8d07-eecc42592d09.png"><br />180°</td>
 </tr>
 <tr border='0'>
-<td align='center'><img src="https://user-images.githubusercontent.com/25483610/27769005-c25e28f4-5f5b-11e7-85bd-f63874724598.png"><br />270°</td>
+<td style='border:0' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769005-c25e28f4-5f5b-11e7-85bd-f63874724598.png"><br />270°</td>
 <td align='center'><img src="https://user-images.githubusercontent.com/25483610/27769007-c26126c6-5f5b-11e7-883c-cf925a9d5934.png"><br />360°</td>
 </tr>
 </table>
