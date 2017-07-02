@@ -7,7 +7,7 @@ category: translate
 tags: [camera]
 ---
 
-흔히(저를 포함해서) Shutter Speed로 많이 알고 방식이 영상을 촬영하는 카메라와 마야, 후디니, 누크 등 여러 DCC(Digital Content Creation) 툴에서는  Shutter Angle이라는 방식으로 사용되고 있습니다. 최근 Shutter Angle에 관하여 다룰 기회가 있어 조사하던 중 개념적인 설명으로 좋은 아티클이 있어서 번역후에 공유합니다.
+기존 Shutter Speed로 알고 있는 방식이 영상을 촬영하는 카메라와 마야, 후디니, 누크 등 여러 DCC(Digital Content Creation) 툴에서는 Shutter Angle이라는 방식으로 사용되고 있다는 것을 알게 될 기회가 있었습니다. 관련 내용을 공부하던 중 개념적인 설명으로 좋은 아티클이 있어서 번역후에 공유합니다.
 
 아래는 카메라 제조사인 RED의 공식사이트에 있는 Shutter Angle에 관한 글을 번역한 내용입니다.
 
