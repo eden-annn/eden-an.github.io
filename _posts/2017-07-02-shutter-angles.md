@@ -72,8 +72,8 @@ Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 
 
 <table border='0' width='100%'>
 <tr>
-<td style='border:0;font-size:11px;' align='center'><a href='http://vimeo.com/44694757' target='_blank'><img src="https://user-images.githubusercontent.com/25483610/27769019-d587622e-5f5b-11e7-85dc-fe87110d2a58.jpg"></a><br />STILL FRAME FROM 45° VIDEO</td>
-<td style='border:0;font-size:11px;' align='center'><a href='http://vimeo.com/44694756' target='_blank'><img src="https://user-images.githubusercontent.com/25483610/27769020-d58b1298-5f5b-11e7-8045-914bb425a35a.jpg"></a><br />STILL FRAME FROM 360° VIDEO</td>
+<td style='border:0;font-size:11px;' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769019-d587622e-5f5b-11e7-85dc-fe87110d2a58.jpg"><br />STILL FRAME FROM 45° VIDEO</td>
+<td style='border:0;font-size:11px;' align='center'><img src="https://user-images.githubusercontent.com/25483610/27769020-d58b1298-5f5b-11e7-8045-914bb425a35a.jpg"><br />STILL FRAME FROM 360° VIDEO</td>
 </tr>
 </table>
 <br />
