@@ -85,3 +85,6 @@ Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 
 
 또 하나의 고려할 만한 것은 표현하고자 하는 영상의 시대(Look) 일 것입니다. 예컨대, 180°보다 작은 각도의 셔터앵글은 1950 년대의 뉴스 화면 같은 룩에 가깝게 표현될 것이고, 180°는 일반적인 영화같은 룩을 보여줍니다.
 
+### VOD
+번역 후 이해를 돕기 위해 관련영상을 첨부합니다.
+<iframe width="560" height="315" src="https://www.youtube.com/embed/OTqR7XkBEj4" frameborder="0" allowfullscreen></iframe>
