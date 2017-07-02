@@ -87,4 +87,4 @@ Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 
 
 ### VOD
 번역 후 이해를 돕기 위해 관련영상을 첨부합니다.
-<center><iframe width="80%" align="center" src="https://www.youtube.com/embed/OTqR7XkBEj4" frameborder="0" allowfullscreen></iframe></center>
+<center><iframe width="80%" height="400px" align="center" src="https://www.youtube.com/embed/OTqR7XkBEj4" frameborder="0" allowfullscreen></iframe></center>
