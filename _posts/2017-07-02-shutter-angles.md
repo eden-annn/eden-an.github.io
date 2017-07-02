@@ -27,10 +27,10 @@ Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 
 
 최신 카메라가 이러한 방식으로 셔터 스피드를 조절할 필요는 없지만, 아직까지도 Shutter angle 이라는 용어 자체는 영상의 모션 블러에 대한 간단하고 보편적인 설명 방법으로 사용되고 있습니다. 프레임 안에서의 특정 피사체에 이전/다음 프레임 간 더 큰 모션 블러를 주기 위해서는 큰 개각도를 선택해야 하며, 그 반대의 경우도 마찬가지입니다:
 
-<table>
+<table width="90%" style='border:0;text-align:center;' align="center">
 <tr>
 <td>
-45° ![45°](https://user-images.githubusercontent.com/25483610/27769013-c2a5478e-5f5b-11e7-9c92-d9be3bea59a3.png)
+<img src="https://user-images.githubusercontent.com/25483610/27769013-c2a5478e-5f5b-11e7-9c92-d9be3bea59a3.png"><br />45°
 </td>
 <td>
 180° ![180°](https://user-images.githubusercontent.com/25483610/27769006-c25e2c8c-5f5b-11e7-8d07-eecc42592d09.png)
