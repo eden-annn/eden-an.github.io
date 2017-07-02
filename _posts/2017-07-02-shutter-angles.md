@@ -60,11 +60,21 @@ Shutter angle은 Frame-rate에 상대적인 셔터 스피드를 설명하기에 
 위 예제 이미지는 기본적인 작동을 이해하는데 도움이 되지만, 스틸 이미지처럼 프레임 간 모션블러는 확인하기 어렵습니다.
 실제로, 셔터 앵글은 -정확한 수치를 인식하지 못하더라도- 영상의 전반적인 느낌에 주관적인 영향을 미칩니다. 아래 예제를 클릭하여 차이점을 확인해보세요:
 
-[레이스 영상]
+<table border='0' width='100%'>
+<tr>
+<td style='border:0;font-size:11px;' align='center'><a href='http://vimeo.com/44694757' target='_blank'><img src="https://user-images.githubusercontent.com/25483610/27769018-d573e172-5f5b-11e7-913b-ae042c529f5c.png"></a><br />45° Shutter Angle</td>
+<td style='border:0;font-size:11px;' align='center'><a href='http://vimeo.com/44694756' target='_blank'><img src="https://user-images.githubusercontent.com/25483610/27769017-d5715718-5f5b-11e7-8377-f0075d2147ff.png"></a><br />360° Shutter Angle</td>
+</tr>
+</table>
 
 셔터 앵글의 차이가 달리기가 시작하는 시점(움직임이 가장 먼 경우)에서는 거의 눈에 띄지 않지만, 어린이가 카메라에 가까워질수록 더 명확해지는 것을 확인해보세요. 아래의 이미지는 모션블러의 차이가 가장 두드러질 때를 극적으로 보여줍니다.
 
-[스틸이미지]
+<table border='0' width='100%'>
+<tr>
+<td style='border:0;font-size:11px;' align='center'><a href='http://vimeo.com/44694757' target='_blank'><img src="https://user-images.githubusercontent.com/25483610/27769019-d587622e-5f5b-11e7-85dc-fe87110d2a58.jpg"></a><br />STILL FRAME FROM 45° VIDEO</td>
+<td style='border:0;font-size:11px;' align='center'><a href='http://vimeo.com/44694756' target='_blank'><img src="https://user-images.githubusercontent.com/25483610/27769020-d58b1298-5f5b-11e7-8045-914bb425a35a.jpg"></a><br />STILL FRAME FROM 360° VIDEO</td>
+</tr>
+</table>
 
 ### DISCUSSION
 
