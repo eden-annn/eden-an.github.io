@@ -30,3 +30,9 @@
 
 - slug: camera
   name: Camera
+  
+- slug: apple
+  name: Apple
+  
+- slug: stevejobs
+  name: SteveJobs
