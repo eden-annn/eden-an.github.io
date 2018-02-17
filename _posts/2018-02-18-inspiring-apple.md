@@ -6,6 +6,8 @@ summary:    That’s what’s going to keep Apple, Apple, is if we keep us, us.
 category: translate
 tags: [apple,stevejobs]
 ---
+<iframe width="560" height="315" src="https://www.youtube.com/embed/oVm0R-fGJrA" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+
 
 There’s lots of ways to be as a person and some people express there deep appreciation in different ways.
 
