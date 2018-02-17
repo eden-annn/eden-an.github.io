@@ -2,7 +2,7 @@
 layout:     post
 title:      Inspiring Apple on 10th Anniversary
 date:       2018-02-18 00:08:42
-summary:    지나치기 쉽지만 알아두면 퇴근을 앞당기는 Nuke 최적화 팁
+summary:    That’s what’s going to keep Apple, Apple, is if we keep us, us. 
 category: translate
 tags: [apple,stevejobs]
 ---
