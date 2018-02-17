@@ -21,7 +21,7 @@ And it’s a way of expressing to the rest of our species our deep appreciation.
 So, we need to be true to who we are and remember what’s really important to us. <br />
 That’s what’s going to keep Apple, Apple, is if we keep us, us. 
 
-<b>Steve Jobs</b>
+- <b>Steve Jobs</b>
 
 <br />
 삶의 방식에는 여러가지가 있지만, 어떤 사람들은 깊은 감사를 그들 각각의 방식으로 표현합니다.<br />
