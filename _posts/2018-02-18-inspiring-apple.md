@@ -6,7 +6,7 @@ summary:    That’s what’s going to keep Apple, Apple, is if we keep us, us.
 category: translate
 tags: [apple,stevejobs]
 ---
-<iframe width="100%" src="https://www.youtube.com/embed/oVm0R-fGJrA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+<center><iframe width="100%" src="https://www.youtube.com/embed/oVm0R-fGJrA?rel=0&amp;controls=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></center>
 
 
 There’s lots of ways to be as a person and some people express there deep appreciation in different ways.
@@ -22,7 +22,9 @@ And it’s a way of expressing to the rest of our species our deep appreciation.
 So, we need to be true to who we are and remember what’s really important to us. 
 That’s what’s going to keep Apple, Apple, is if we keep us, us. 
 
+<b>Steve Jobs</b>
 
+<br />
 삶의 방식에는 여러가지가 있지만, 어떤 사람들은 깊은 감사를 그들 각각의 방식으로 표현합니다. 
 
 하지만 사람들이 다른 인류에게 그들의 감사를 표하는 방법 중 하나는 멋진 무언가를 만들어서 세상에 내보이는 것입니다.
