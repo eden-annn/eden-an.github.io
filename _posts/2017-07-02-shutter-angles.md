@@ -1,6 +1,6 @@
 ---
 layout:     post
-title:Shutter angles & creative control
+title: Shutter angles & creative control
 date:       2017-07-02 18:58:42
 summary:    셔터앵글에 대하여...
 category: translate
