@@ -30,4 +30,4 @@ Web Front/End Developer - Razer Korea Branch<br />
 
 <spans style="color:#FFF">
   "The first step in solving a problem is recognizing there is one”<br />
-  <small><b>Will Mcavoy —NEWS ROOM—</b></small></span>
+  <small><b>Will Mcavoy —NEWS ROOM—</b></small>
