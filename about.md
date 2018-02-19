@@ -28,7 +28,7 @@ Web Front/End Developer - Razer Korea Branch<br />
 <span style="color:#999">06/2007 - 06/2008 - Seoul, Korea</span>
 
 
-<spans tyle="color:#FFF">
+<spans style="color:#FFF">
   "The first step in solving a problem is recognizing there is one”<br />
-  <b>Will Mcavoy —NEWS ROOM—</b>
+  <small><b>Will Mcavoy —NEWS ROOM—</b></small>
 </span>
