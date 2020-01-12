@@ -12,8 +12,11 @@ mail : eden.annn@gmail.com<br />
 sns : [LinkedIn](https://www.linkedin.com/in/edenan/)
 
 ## Work Experience
+2D Pipeline Technical Director - ScanlineVFX<br />
+<span style="color:#999">01/2019 - Present - Vancouver, Canada</span>
+
 Compositing Technical Director - 4th Creative Party<br />
-<span style="color:#999">02/2014 - Present - Busan, Korea</span>
+<span style="color:#999">02/2014 - 12/2018 - Busan, Korea</span>
 
 Web Front/End Developer - SteelSeries Korea Branch<br />
 <span style="color:#999">08/2011 - 09/2012 - Seoul, Korea</span>
