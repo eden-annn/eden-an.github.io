@@ -11,9 +11,9 @@ collections:
 title:       eden an
 email:       eden.annn@gmail.com
 author:      Eden An
-description: "eden an's VFX compositing tech blog"
-baseurl:     "https://eden-annn.github.io"
-url:         "https://eden-annn.github.io"
+description: "VFX tech blog"
+baseurl:     ""
+url:         "https://eden-an.github.io"
 date_format: "%b %-d, %Y"
 
 # Google services
