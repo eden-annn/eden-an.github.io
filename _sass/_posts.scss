@@ -2,16 +2,16 @@
 .posts {
   margin: 0;
   padding: 0 20px;
-  border-bottom: 1px solid #333;
+  border-bottom: 1px solid #252525;
 }
 
 .posts .post {
-  border-bottom: thin solid #333;
+  border-bottom: thin solid #252525;
 }
 
 .post-header {
-  border-top: 1px solid #333;
-  border-bottom: 1px solid #333;
+  border-top: 1px solid #252525;
+  border-bottom: 1px solid #252525;
   padding: 50px 0;
   text-align: center;
 }
@@ -88,5 +88,5 @@ a.post-link:hover .post-title {
 }
 
 .related-post-title {
-  border-bottom: thin solid #333;
+  border-bottom: thin solid #252525;
 }
