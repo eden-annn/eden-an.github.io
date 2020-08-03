@@ -12,6 +12,7 @@
 
 .site-header .site-title {
   font-size: $h2;
+  text-decoration: none;
 }
 
 .site-nav {
@@ -27,7 +28,7 @@
 .site-header nav a:active {
   color: $orange;
   opacity: 1;
-  border-bottom: 2px solid $orange;
+  text-decoration: none;
 }
 
 .site-nav a + a {
