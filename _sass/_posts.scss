@@ -7,7 +7,7 @@
 
 .posts .post {
   margin-bottom: 0.75em;
-  border-bottom: thin solid #f3f3f3;
+  border-bottom: thin solid #333;
 }
 
 .post-header {
@@ -30,13 +30,17 @@
   margin-bottom: 0.375em;
 }
 
+.posts .post .post-summary {
+  color: #999;
+}
+
 .post-link .post-title {
   margin-top: 0;
   font-weight: 500;
 }
 
 a.post-link .post-title {
-  color: #999;
+  color: #FFF;
 }
 
 a.post-link:hover .post-title {
@@ -71,5 +75,5 @@ a.post-link:hover .post-title {
 }
 
 .related-post-title {
-  border-bottom: thin solid #f3f3f3;
+  border-bottom: thin solid #333;
 }
