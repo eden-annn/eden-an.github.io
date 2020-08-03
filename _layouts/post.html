@@ -28,9 +28,12 @@ layout: default
   {% if category %}
     {% capture category_content %}Category <a href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
   {% endif %}
+  </span>
+  <span class="mid-divider"></span>
+  <span class="post-meta small">
   <!-- tag -->
   {% if post.tags.size > 0 %}
-    {% capture tags_content %} <span class="mid-divider">::after</span> Tag {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}{% endcapture %}
+    {% capture tags_content %}  Tag {% if post.tags.size == 1 %}<i class="fa fa-tag"></i>{% else %}<i class="fa fa-tags"></i>{% endif %}{% endcapture %}
     {% for post_tag in post.tags %}
         {% for data_tag in site.data.tags %}
             {% if data_tag.slug == post_tag %}
