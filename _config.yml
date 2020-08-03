@@ -83,7 +83,7 @@ text:
     newer: 'Newer posts'
     older: 'Older posts'
   share_buttons:
-    text:         'Share this post!'
+    text:         'Share this post:'
     facebook:     'Share on Facebook'
     twitter:      'Share on Twitter'
     googleplus:   'Share on Google+'
