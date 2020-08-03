@@ -7,7 +7,6 @@
 
 .posts .post {
   margin-bottom: 0.75em;
-  color: #fff;
   border-bottom: thin solid #f3f3f3;
 }
 
@@ -24,6 +23,7 @@
 
 .post-content {
   padding: 40px 20px 0;
+  color: #fff;
 }
 
 .posts .post:last-child {
@@ -37,7 +37,7 @@
 }
 
 a.post-link .post-title {
-  color: #333;
+  color: #999;
 }
 
 a.post-link:hover .post-title {
