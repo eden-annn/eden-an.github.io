@@ -4,7 +4,7 @@ title:      Inspiring Apple on 10th Anniversary
 date:       2018-02-18 00:08:42
 summary:    That’s what’s going to keep Apple, Apple, is if we keep us, us. 
 category: private
-tags: [apple,stevejobs]
+tags: [private]
 ---
 <center><div class="video-container"><iframe width="560" height="315" src="https://www.youtube.com/embed/oVm0R-fGJrA?rel=0&amp;showinfo=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe></div></center>
 <br />
