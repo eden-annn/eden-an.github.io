@@ -14,7 +14,7 @@ layout: default
             {% if category %}
               {% capture category_content %}<a href="{{ category.url }}">{{ category.name }}</a>{% endcapture %}
             {% endif %}
-            <p class="post-meta">
+            <p class="post-meta post-category">
                 {{ category_content }}
             </p>
           <a href="{{ post.url | prepend: site.baseurl }}" class="post-link"><h3 class="h3 post-title">{{ post.title }}</h3></a>
