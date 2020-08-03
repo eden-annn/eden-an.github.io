@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-<h1>Articles by tag: {{ page.slug }}</h1>
+<h2>Filter by tag: {{ page.slug }}</h2>
 <div>
     {% if site.tags[page.slug] %}
         {% for post in site.tags[page.slug] %}
