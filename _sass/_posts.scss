@@ -35,7 +35,7 @@
 
 .post-link .post-title {
   margin-top: 0;
-  font-weight: 500;
+  font-weight: 300;
 }
 
 a.post-link .post-title {
@@ -69,13 +69,18 @@ a.post-link:hover .post-title {
   font-size: $post-meta-font-size;
 }
 
+.post-meta a {
+ color: #7a7a7a;
+ background: none;
+}
+
 .post-category{
   padding: 0;
 }
 
-.post-meta a {
- color: $mid-gray;
- background: none;
+
+.post-category a{
+  color: $mid-gray;
 }
 
 .post-meta a:hover {
