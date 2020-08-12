@@ -19,6 +19,7 @@ table {
         line-height: 1.2;
         vertical-align: top;
         border-top: 1px solid #252525;
+        color: $mid-gray;
       }
     }
   }
@@ -35,7 +36,6 @@ table {
       > th,
       > td {
         border-top: 0;
-        color: $mid-gray;
       }
     }
   }
