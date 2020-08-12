@@ -26,7 +26,10 @@ ul {
   font-size: $h6;
   margin-top: 0;
   margin-bottom: $space-2;
+  color: $mid-gray;
 }
+
+li {color: $mid-gray;}
 
 ol,
 ul {
