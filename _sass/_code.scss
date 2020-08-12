@@ -13,6 +13,10 @@ code {
   color: $mid-gray;
 }
 
+code .highlighter-rouge {
+  padding: 0 3px;
+}
+
 pre {
   padding: 1.125em;
   line-height: 1.11;
