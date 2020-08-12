@@ -36,3 +36,18 @@
   
 - slug: stevejobs
   name: SteveJobs
+
+- slug: network
+  name: Network
+
+- slug: pipeline
+  name: Pipeline
+
+- slug: python
+  name: Python
+
+- slug: bash
+  name: Bash
+
+- slug: localization
+  name: Localization
